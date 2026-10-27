@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="個人介紹與專案作品集">
+    <title>個人介紹｜作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="主要導覽">
+        <a href="#about">關於我</a>
+        <a href="#experience">經歷</a>
+        <a href="#projects">作品集</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" aria-labelledby="about-title">
+        <img
+          class="profile-image"
+          src="個人2.jpg"
+          alt="余襄昀的個人照片"
+          width="240"
+          height="240"
+        >
+        <div class="about-copy">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2 id="about-title"><span>我是</span><span>余襄昀</span></h2>
+          <p>我是一位視覺傳達設計生。</p>
+          <p>專注於平面海報、3D 視覺與攝影創作。
+          在不同媒材之間切換視角，用視覺解決問題，用畫面記錄思考。</p>
+          <P>歡迎瀏覽我的專案作品。</p>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section" aria-labelledby="experience-title">
+        <h2 id="experience-title">經歷</h2>
+        <article class="info-card">
+          <h3>［設計系／大學生］</h3>
+          <p class="meta">南台科技大學・2024.09 – 2028.06</p>
+          <p>目前就讀於南台科技大學視覺傳達設計系商業設計組<P>
+          <p>名言 : 攝影激發淺能，但設計一竅不通。</p>
+        </article>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">技能</h2>
+        <article>
+          <h3>專業證照</h3>
+          <p>視覺傳達設計丙級
+          <P>印前製程PC丙級
+          <P>印前製程PC乙級</p>
+        </article>
+        <article>
+          <h3>設計軟體</h3>
+          <p>Adobe Illustrator
+          <P>Adobe Photoshop
+          </p>
+        </article>
+      </section>
+
+      <section id="projects" class="content-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">作品集</h2>
+        <div class="artwork-gallery" data-artwork-gallery>
+          <div class="gallery-categories" role="group" aria-label="作品類別">
+            <button type="button" class="category-button" data-category="photography" aria-pressed="true">攝影</button>
+            <button type="button" class="category-button" data-category="3d" aria-pressed="false">3D</button>
+            <button type="button" class="category-button" data-category="poster" aria-pressed="false">海報</button>
+          </div>
+          <div class="photography-gallery">
+            <div class="gallery-category" data-category-panel="photography" aria-label="攝影作品">
+              <figure class="gallery-slide">
+                <div class="image-mat">
+                  <img src="攝影.JPG" alt="海邊與遠方山景的攝影作品" loading="lazy">
+                </div>
+                <figcaption>攝影作品 1</figcaption>
+              </figure>
+              <figure class="gallery-slide" hidden>
+                <div class="image-mat">
+                  <img src="攝影2.JPG" alt="第二張攝影作品" loading="lazy">
+                </div>
+                <figcaption>攝影作品 2</figcaption>
+              </figure>
+            </div>
+            <div class="gallery-category" data-category-panel="3d" aria-label="3D 作品" hidden>
+              <figure class="gallery-slide">
+                <div class="image-mat">
+                  <img src="3D01.jpg" alt="3D 建模作品：木製書桌與書架的斜角視圖" loading="lazy">
+                </div>
+                <figcaption>3D 作品 1</figcaption>
+              </figure>
+              <figure class="gallery-slide" hidden>
+                <div class="image-mat">
+                  <img src="3D02.jpg" alt="3D 建模作品：木製書桌與書架的正面視圖" loading="lazy">
+                </div>
+                <figcaption>3D 作品 2</figcaption>
+              </figure>
+            </div>
+            <div class="gallery-category" data-category-panel="poster" aria-label="海報作品" hidden>
+              <figure class="gallery-slide">
+                <div class="image-mat">
+                  <img class="poster-image" src="海報.png" alt="海報設計作品" loading="lazy">
+                </div>
+                <figcaption>海報作品</figcaption>
+              </figure>
+            </div>
+            <div class="gallery-controls" aria-label="作品頁面切換">
+              <button type="button" data-previous disabled>上一頁</button>
+              <span data-page-status aria-live="polite">第 1 頁，共 2 頁</span>
+              <button type="button" data-next>下一頁</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>聯絡我：<a href="mailto:4B3J2021@stust.edu.tw">4B3J2021@stust.edu.tw</a></p>
+      <small>&copy; <span id="year">2006</span> 余襄昀</small>
+    </footer>
+  </body>
+</html>
