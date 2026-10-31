@@ -126,10 +126,10 @@ main {
   padding: clamp(3rem, 8vw, 6rem) clamp(2rem, 6vw, 4rem);
   border: 1px solid rgb(255 255 255 / 70%);
   border-radius: 1.5rem;
-  background-color: #579fc8;
+  background-color: #8ac8e6;
   background-image:
-    linear-gradient(135deg, rgb(66 145 187 / 92%), rgb(105 177 215 / 92%)),
-    radial-gradient(circle at 80% 10%, #c7e7f6, #579fc8 70%);
+    linear-gradient(135deg, rgb(154 211 237 / 94%), rgb(126 192 224 / 94%)),
+    radial-gradient(circle at 80% 10%, #e0f4fc, #8ac8e6 70%);
   background-position: center;
   background-size: cover;
   color: #102d43;
