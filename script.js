@@ -1,3 +1,30 @@
+const navigationToggle = document.querySelector("[data-nav-toggle]");
+const navigation = document.querySelector("#main-navigation");
+
+if (navigationToggle && navigation) {
+  const setNavigationOpen = (isOpen) => {
+    navigationToggle.setAttribute("aria-expanded", String(isOpen));
+    navigation.hidden = !isOpen;
+  };
+
+  navigationToggle.addEventListener("click", () => {
+    setNavigationOpen(navigationToggle.getAttribute("aria-expanded") !== "true");
+  });
+
+  navigation.addEventListener("click", (event) => {
+    if (event.target instanceof Element && event.target.closest("a")) {
+      setNavigationOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navigationToggle.getAttribute("aria-expanded") === "true") {
+      setNavigationOpen(false);
+      navigationToggle.focus();
+    }
+  });
+}
+
 document.querySelectorAll("[data-artwork-gallery]").forEach((gallery) => {
   const categoryButtons = Array.from(gallery.querySelectorAll("[data-category]"));
   const panels = Array.from(gallery.querySelectorAll("[data-category-panel]"));

@@ -10,11 +10,18 @@
   </head>
   <body>
     <header>
-      <nav aria-label="主要導覽">
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        data-nav-toggle
+      >選單</button>
+      <nav id="main-navigation" aria-label="主要導覽" hidden>
         <a href="#about">關於我</a>
         <a href="#experience">經歷</a>
-        <a href="#projects">作品集</a>
         <a href="#skills">技能</a>
+        <a href="#projects">作品集</a>
         <a href="#contact">聯絡方式</a>
       </nav>
     </header>
@@ -45,6 +52,17 @@
           <p class="meta">南台科技大學・2024.09 – 2028.06</p>
           <p>目前就讀於南台科技大學視覺傳達設計系商業設計組<P>
           <p>名言 : 攝影激發淺能，但設計一竅不通。</p>
+        </article>
+        <article class="info-card">
+          <h3>興趣愛好</h3>
+          <ul class="skill-list" aria-label="興趣愛好">
+            <li>攝影</li>
+            <li>聽音樂</li>
+            <li>追劇綜藝</li>
+            <li>追星</li>
+            <li>小說</li>
+            <li>漫畫</li>
+          </ul>
         </article>
       </section>
 
